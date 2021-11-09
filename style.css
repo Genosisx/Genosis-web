@@ -1,0 +1,781 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --pink: white;
+  --violet: white;
+}
+/*********************** THIS IS CODE FOR LAYOUT ie GRID ***********************/
+body {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: minmax(300px, auto);
+  grid-template-areas:
+    "navbar"
+    "intro"
+    "aboutus"
+    "lead-head"
+    "leads"
+    "footer";
+}
+/*****************************ENDS******************************/
+
+/*********************** CSS CODE FOR NAVBAR STARTS ***********************/
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: rgba(51, 51, 51, 0.616);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  transition: 0.2s;
+}
+
+.header-active {
+  top: 0;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+header .navbar {
+  background-color: none;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+
+  background-color: none;
+}
+header .navbar ul li {
+  margin: 1px 30px;
+}
+header .navbar ul li a {
+  font-size: 1rem;
+  font-weight: 100;
+  background-color: none;
+  color: greenyellow;
+  font-family: "Staatliches", cursive;
+  padding-left: 5px;
+
+  transition: 0.12s ease-in;
+}
+
+header .navbar ul li.active,
+header .navbar ul li a:hover {
+  color: #fff;
+}
+
+header .logo {
+  position: relative;
+  margin-left: 15px;
+  font-size: 2rem;
+  color: var(--violet);
+  font-family: "Staatliches", cursive;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+header .fa-bars {
+  margin-right: 10px;
+  font-size: 3rem;
+  color: var(--pink);
+  cursor: pointer;
+  display: none;
+  transition: 0.2s;
+}
+
+header .fa-times {
+  transform: rotate(180deg);
+  color: var(--violet);
+}
+
+/*****************************ENDS******************************/
+
+/*********************** CSS CODE FOR INTRO STARTS ***********************/
+
+.intro {
+  grid-area: intro;
+  height: 100vh;
+  background: url("intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro h1 {
+  font-family: "Staatliches", cursive;
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.intro h4 {
+  font-family: "Staatliches", cursive;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.intro span a {
+  position: relative;
+  top: 28px;
+
+  font-size: 1.8rem;
+  font-family: "Staatliches", cursive;
+  padding: 5px 12px;
+  margin-top: 5px;
+  transition: 0.15s ease-out;
+  border-radius: 2px;
+  border: 3px solid black;
+  color: black;
+  background-color: white;
+}
+.intro span a:hover {
+  background: rgb(27, 27, 27);
+  color: rgb(255, 255, 255);
+}
+/*******ENDS********/
+
+/*********************** CSS CODE FOR ABOUT US STARTS ***********************/
+
+.aboutus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  grid-area: aboutus;
+  width: auto;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutus .left-text {
+  margin-left: 5%;
+  margin-bottom: 15%;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutus .left-text .box-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 40vw;
+  height: 50vh;
+  background: #fff;
+  border-radius: 5px;
+
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+}
+.aboutus .left-text .box-left h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  padding: 20px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 5px;
+  color: rgb(255, 136, 0);
+}
+.aboutus .left-text .box-left p {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 80px;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+/*********************** ^ CSS CODE LEFT ^ ***********************/
+
+/*********************** CSS CODE FOR RIGHT ***********************/
+.aboutus .right-text {
+  margin-right: 5%;
+  margin-top: 15%;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutus .right-text .box-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 40vw;
+  height: 50vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+}
+.aboutus .right-text .box-right h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  padding: 20px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 5px;
+  color: rgb(255, 136, 0);
+}
+.aboutus .right-text .box-right p {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 80px;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+/*******ENDS********/
+
+.lead-head {
+  padding-top: 35px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: lead-head;
+  width: 100%;
+  height: 15vh;
+}
+.lead-head h2 {
+  font-family: "Staatliches", cursive;
+  letter-spacing: 2px;
+  font-weight: 100;
+  padding-left: 10px;
+  color: rgb(46, 46, 46);
+  font-size: 2.5rem;
+  padding: 20px;
+
+  border-radius: 6px;
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+}
+
+/*********************** CSS CODE FOR leads STARTS ***********************/
+
+.leads {
+  grid-area: leads;
+  display: flex;
+
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/*** 01 ****WEB LEAD********/
+.web {
+  position: relative;
+  top: 25px;
+  width: 25%;
+  height: 60vh;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+
+  transition: 0.15s ease-out;
+  border-radius: 5px;
+}
+.web:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.web img {
+  position: relative;
+  top: 25px;
+  width: 90%;
+  height: 30%;
+  object-fit: cover;
+  filter: grayscale(0);
+  transition: 0.2s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+}
+.web img:hover {
+  filter: grayscale(0);
+}
+
+.web p {
+  position: relative;
+
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+
+  color: rgb(31, 31, 31);
+}
+.web span a {
+  position: relative;
+  top: -35px;
+  color: rgb(44, 44, 44);
+  text-align: center;
+  font-family: "Staatliches", cursive;
+
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.18s all;
+}
+.web span a:hover {
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/*** 02 ****************APP LEAD******************/
+.app {
+  position: relative;
+  top: 25px;
+  width: 25%;
+  height: 60vh;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+
+  transition: 0.15s ease-out;
+}
+.app:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.app img {
+  position: relative;
+  top: 25px;
+  width: 90%;
+  height: 30%;
+  object-fit: cover;
+  filter: grayscale(0);
+  transition: 0.2s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.app img:hover {
+  filter: grayscale(0);
+}
+
+.app p {
+  position: relative;
+
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+
+  color: rgb(31, 31, 31);
+}
+
+.app span a {
+  position: relative;
+  top: -35px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Staatliches", cursive;
+
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.18s all;
+}
+.app span a:hover {
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(0, 0, 0);
+}
+/*** 03 ****AIML LEAD********/
+
+.aiml {
+  position: relative;
+  top: 25px;
+  width: 25%;
+  height: 60vh;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+
+  transition: 0.15s ease-out;
+}
+.aiml:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.aiml img {
+  position: relative;
+  top: 25px;
+  width: 90%;
+  height: 30%;
+  object-fit: cover;
+  filter: grayscale(0);
+  transition: 0.2s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.aiml img:hover {
+  filter: grayscale(0);
+}
+
+.aiml p {
+  position: relative;
+
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+
+  color: rgb(31, 31, 31);
+}
+
+.aiml span a {
+  position: relative;
+  top: -35px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Staatliches", cursive;
+
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.18s all;
+}
+.aiml span a:hover {
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/*******ENDS********/
+
+/**********CSS FOR FOOTER********/
+.footer {
+  position: relative;
+
+  grid-area: footer;
+  width: 100%;
+  height: 20vh;
+  background: rgb(20, 20, 20);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-footer {
+  margin-left: 55px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  color: rgb(255, 138, 70);
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.x {
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+.right-footer {
+  margin-right: 25px;
+  color: rgb(255, 138, 70);
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
+}
+.foot-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+
+  font-size: 1.4rem;
+}
+.foot-links a {
+  width: 20px;
+  height: 10px;
+  color: rgb(255, 138, 70);
+  transition: 0.2s ease-out;
+  margin-top: 10px;
+}
+.foot-links a:hover {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/******************************************* MEDIA QUERY *******************************************/
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    height: 50px;
+  }
+  header .fa-bars {
+    display: block;
+    margin-right: 10px;
+  }
+  header .navbar {
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    width: 100%;
+    background: #333;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: 0.2s linear;
+    height: 100vh;
+  }
+  header .navbar ul {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+  }
+  header .navbar ul li {
+    width: 100%;
+
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+  }
+  header .navbar ul li a {
+    display: block;
+    background-color: #333;
+    color: white;
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  header .navbar ul li a:hover {
+    color: greenyellow;
+    background-color: rgb(29, 29, 29);
+  }
+  header .nav-toggle {
+    top: 65px;
+    opacity: 1;
+    opacity: 0.8;
+  }
+
+  /***********************MEDIA QUERY CSS CODE FOR INTRO STARTS ***********************/
+
+  .intro {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .intro h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+  }
+
+  .intro h4 {
+    font-size: 1.7rem;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+  }
+
+  .intro span a {
+    padding: 10px 20px;
+  }
+
+  /*******ENDS********/
+  /*********** MEDIA QUERY for about us************/
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 160vh;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .aboutus .left-text {
+    margin-top: -30px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutus .left-text .box-left {
+    margin-top: 10px;
+    width: 90vw;
+    height: 50vh;
+  }
+  .aboutus .left-text .box-left p {
+    font-size: 1.5rem;
+    padding: 25px;
+  }
+
+  .aboutus .x {
+    margin-top: -140px;
+    font-size: 10rem;
+    font-family: "Staatliches", cursive;
+    color: white;
+  }
+  .aboutus .right-text {
+    margin-top: -180px;
+    margin-right: 0px;
+    display: flex;
+
+    flex-direction: column-reverse;
+  }
+
+  .aboutus .right-text .box-right {
+    margin-top: 20px;
+    width: 90vw;
+    height: 50vh;
+  }
+  .aboutus .right-text .box-right p {
+    font-size: 1.5rem;
+    padding: 25px;
+  }
+
+  /***********************MEDIA QUERY CSS CODE FOR leads STARTS ***********************/
+
+  .leads {
+    height: 115%;
+    grid-area: leads;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  /*** 01 **** MEDIA QUERY WEB LEAD********/
+  .web,
+  .app,
+  .aiml {
+    position: relative;
+
+    width: 88%;
+    height: 55vh;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    border-radius: 0 0 5px 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+      rgba(187, 187, 187, 0.23) 0px 6px 6px;
+  }
+  .web h2 {
+    top: -22px;
+    font-size: 2rem;
+  }
+  .web p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .web span a {
+    font-size: 1.8rem;
+  }
+  /*** 02 **** MEDIA QUERY APP LEAD********/
+  .app h2 {
+    top: -22px;
+    font-size: 2rem;
+  }
+  .app p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .app span a {
+    font-size: 1.8rem;
+  }
+  /*** 03****MEDIA QUERY  aiml LEAD********/
+  .aiml h2 {
+    top: -22px;
+    font-size: 2rem;
+  }
+  .aiml p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .aiml span a {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    position: relative;
+    top: 200px;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-evenly;
+  }
+  .left-footer {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .right-footer {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .right-footer a {
+    color: rgb(255, 138, 70);
+    font-size: 2.4rem;
+    text-align: center;
+    transition: 0.2s ease-out;
+  }
+  .right-footer a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 2.6rem;
+  }
+  /***********END OF MEDIA QUERY************/
+}
