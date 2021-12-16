@@ -12,9 +12,9 @@
 /*********************** THIS IS CODE FOR LAYOUT ie GRID ***********************/
 body {
   display: grid;
-  grid-tremplate-rows: auto;
-  grid-tremplate-columns: minmax(300rem, auto);
-  grid-tremplate-areas:
+  grid-tpxplate-rows: auto;
+  grid-tpxplate-columns: minmax(300px, auto);
+  grid-tpxplate-areas:
     "navbar"
     "intro"
     "aboutus"
@@ -36,9 +36,9 @@ header {
   transform: translate(-50%);
   border-radius: 0;
   display: flex;
-  align-itrems: center;
+  align-itpxs: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1px 2px;
   z-index: 1000;
   transition: 0.2s;
 }
@@ -55,22 +55,22 @@ header .navbar {
 
 header .navbar ul {
   display: flex;
-  align-itrems: center;
+  align-itpxs: center;
   justify-content: space-evenly;
   list-style: none;
 
   background-color: none;
 }
 header .navbar ul li {
-  margin: 1rem 30rem;
+  margin: 1px 30px;
 }
 header .navbar ul li a {
-  font-size: 1rem;
+  font-size: 1px;
   font-weight: 100;
   background-color: none;
   color: greenyellow;
   font-family: "Staatliches", cursive;
-  padding-left: 5rem;
+  padding-left: 5px;
 
   transition: 0.12s ease-in;
 }
@@ -82,17 +82,17 @@ header .navbar ul li a:hover {
 
 header .logo {
   position: relative;
-  margin-left: 15rem;
-  font-size: 2rem;
+  margin-left: 15px;
+  font-size: 2px;
   color: var(--violet);
   font-family: "Staatliches", cursive;
   text-transform: uppercase;
-  padding: 5rem;
+  padding: 5px;
 }
 
 header .fa-bars {
-  margin-right: 10rem;
-  font-size: 3rem;
+  margin-right: 10px;
+  font-size: 3px;
   color: var(--pink);
   cursor: pointer;
   display: none;
@@ -116,35 +116,35 @@ header .fa-times {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-itrems: center;
+  align-itpxs: center;
   flex-direction: column;
 }
 
 .intro h1 {
   font-family: "Staatliches", cursive;
   color: rgb(255, 255, 255);
-  font-size: 4rem;
+  font-size: 4px;
   font-weight: 100;
 }
 
 .intro h4 {
   font-family: "Staatliches", cursive;
   color: rgb(255, 255, 255);
-  font-size: 1.2rem;
+  font-size: 1.2px;
   font-weight: 100;
 }
 
 .intro span a {
   position: relative;
-  top: 28rem;
+  top: 28px;
 
-  font-size: 1.8rem;
+  font-size: 1.8px;
   font-family: "Staatliches", cursive;
-  padding: 5rem 12rem;
-  margin-top: 5rem;
+  padding: 5px 12px;
+  margin-top: 5px;
   transition: 0.15s ease-out;
-  border-radius: 2rem;
-  border: 3rem solid black;
+  border-radius: 2px;
+  border: 3px solid black;
   color: black;
   background-color: white;
 }
@@ -160,7 +160,7 @@ header .fa-times {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-itrems: center;
+  align-itpxs: center;
   justify-content: space-between;
   position: relative;
 
@@ -177,7 +177,7 @@ header .fa-times {
   margin-bottom: 15%;
   display: flex;
 
-  align-itrems: center;
+  align-itpxs: center;
   flex-direction: column;
 }
 
@@ -185,30 +185,30 @@ header .fa-times {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itrems: center;
-  margin-top: 40rem;
+  align-itpxs: center;
+  margin-top: 40px;
   width: 40vw;
   height: 50vh;
   background: #fff;
-  border-radius: 5rem;
+  border-radius: 5px;
 
-  box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-    rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
 }
 .aboutus .left-text .box-left h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2rem;
-  padding: 20rem;
+  font-size: 2px;
+  padding: 20px;
   background-color: rgb(34, 34, 34);
-  border-radius: 5rem;
+  border-radius: 5px;
   color: rgb(255, 136, 0);
 }
 .aboutus .left-text .box-left p {
   font-family: "Josefin Sans", sans-serif;
-  padding: 80rem;
-  font-size: 1.2rem;
+  padding: 80px;
+  font-size: 1.2px;
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 1.5px;
 }
 /*********************** ^ CSS CODE LEFT ^ ***********************/
 
@@ -218,7 +218,7 @@ header .fa-times {
   margin-top: 15%;
   display: flex;
 
-  align-itrems: center;
+  align-itpxs: center;
   flex-direction: column;
 }
 
@@ -226,56 +226,56 @@ header .fa-times {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itrems: center;
+  align-itpxs: center;
 
   width: 40vw;
   height: 50vh;
   background-color: rgb(255, 255, 255);
-  border-radius: 5rem;
+  border-radius: 5px;
 
-  box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-    rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
 }
 .aboutus .right-text .box-right h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2rem;
-  padding: 20rem;
+  font-size: 2px;
+  padding: 20px;
   background-color: rgb(34, 34, 34);
-  border-radius: 5rem;
+  border-radius: 5px;
   color: rgb(255, 136, 0);
 }
 .aboutus .right-text .box-right p {
   font-family: "Josefin Sans", sans-serif;
-  padding: 80rem;
-  font-size: 1.2rem;
+  padding: 80px;
+  font-size: 1.2px;
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 1.5px;
 }
 /*******ENDS********/
 
 .lead-head {
-  padding-top: 35rem;
+  padding-top: 35px;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-itrems: center;
+  align-itpxs: center;
   grid-area: lead-head;
   width: 100%;
   height: 15vh;
 }
 .lead-head h2 {
   font-family: "Staatliches", cursive;
-  letter-spacing: 2rem;
+  letter-spacing: 2px;
   font-weight: 100;
-  padding-left: 10rem;
+  padding-left: 10px;
   color: rgb(46, 46, 46);
-  font-size: 2.5rem;
-  padding: 20rem;
+  font-size: 2.5px;
+  padding: 20px;
 
-  border-radius: 6rem;
-  box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-    rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
+  border-radius: 6px;
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
 }
 
 /*********************** CSS CODE FOR leads STARTS ***********************/
@@ -286,44 +286,44 @@ header .fa-times {
 
   height: 100vh;
   justify-content: center;
-  align-itrems: center;
+  align-itpxs: center;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 /*** 01 ****WEB LEAD********/
 .web {
   position: relative;
-  top: 25rem;
+  top: 25px;
   width: 25%;
   height: 60vh;
-  margin: 10rem;
+  margin: 10px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itrems: center;
+  align-itpxs: center;
   justify-content: space-between;
   background: rgb(255, 255, 255);
-  box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-    rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
 
   transition: 0.15s ease-out;
-  border-radius: 5rem;
+  border-radius: 5px;
 }
 .web:hover {
-  box-shadow: rgba(0, 0, 0, 0.19) 0rem 10rem 20rem, rgba(0, 0, 0, 0.23) 0rem 6rem 6rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .web img {
   position: relative;
-  top: 25rem;
+  top: 25px;
   width: 90%;
   height: 30%;
   object-fit: cover;
   filter: grayscale(0);
   transition: 0.2s ease-in;
-  box-shadow: rgba(0, 0, 0, 0.24) 0rem 3rem 8rem;
-  border-radius: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
 }
 .web img:hover {
   filter: grayscale(0);
@@ -332,66 +332,66 @@ header .fa-times {
 .web p {
   position: relative;
 
-  padding: 20rem 20rem;
+  padding: 20px 20px;
   text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.2px;
+  line-height: 1.5px;
   font-family: "Josefin Sans", sans-serif;
 
   color: rgb(31, 31, 31);
 }
 .web span a {
   position: relative;
-  top: -35rem;
+  top: -35px;
   color: rgb(44, 44, 44);
   text-align: center;
   font-family: "Staatliches", cursive;
 
-  font-size: 1.2rem;
-  padding: 5rem 15rem;
+  font-size: 1.2px;
+  padding: 5px 15px;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.19) 0rem 10rem 20rem, rgba(0, 0, 0, 0.23) 0rem 6rem 6rem;
-  border: 2rem solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(255, 255, 255);
   transition: 0.18s all;
 }
 .web span a:hover {
-  box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-    rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
-  border: 2rem solid rgb(0, 0, 0);
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(0, 0, 0);
 }
 
 /*** 02 ****************APP LEAD******************/
 .app {
   position: relative;
-  top: 25rem;
+  top: 25px;
   width: 25%;
   height: 60vh;
-  margin: 10rem;
+  margin: 10px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itrems: center;
+  align-itpxs: center;
   justify-content: space-between;
   background: rgb(255, 255, 255);
-  box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-    rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
 
   transition: 0.15s ease-out;
 }
 .app:hover {
-  box-shadow: rgba(0, 0, 0, 0.19) 0rem 10rem 20rem, rgba(0, 0, 0, 0.23) 0rem 6rem 6rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .app img {
   position: relative;
-  top: 25rem;
+  top: 25px;
   width: 90%;
   height: 30%;
   object-fit: cover;
   filter: grayscale(0);
   transition: 0.2s ease-in;
-  box-shadow: rgba(0, 0, 0, 0.24) 0rem 3rem 8rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .app img:hover {
   filter: grayscale(0);
@@ -400,10 +400,10 @@ header .fa-times {
 .app p {
   position: relative;
 
-  padding: 20rem 20rem;
+  padding: 20px 20px;
   text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.2px;
+  line-height: 1.5px;
   font-family: "Josefin Sans", sans-serif;
 
   color: rgb(31, 31, 31);
@@ -411,56 +411,56 @@ header .fa-times {
 
 .app span a {
   position: relative;
-  top: -35rem;
+  top: -35px;
   color: rgb(0, 0, 0);
   text-align: center;
   font-family: "Staatliches", cursive;
 
-  font-size: 1.2rem;
-  padding: 5rem 15rem;
+  font-size: 1.2px;
+  padding: 5px 15px;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.19) 0rem 10rem 20rem, rgba(0, 0, 0, 0.23) 0rem 6rem 6rem;
-  border: 2rem solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(255, 255, 255);
   transition: 0.18s all;
 }
 .app span a:hover {
-  box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-    rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
-  border: 2rem solid rgb(0, 0, 0);
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(0, 0, 0);
 }
 /*** 03 ****AIML LEAD********/
 
 .aiml {
   position: relative;
-  top: 25rem;
+  top: 25px;
   width: 25%;
   height: 60vh;
-  margin: 10rem;
+  margin: 10px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itrems: center;
+  align-itpxs: center;
   justify-content: space-between;
   background: rgb(255, 255, 255);
-  box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-    rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
 
   transition: 0.15s ease-out;
 }
 .aiml:hover {
-  box-shadow: rgba(0, 0, 0, 0.19) 0rem 10rem 20rem, rgba(0, 0, 0, 0.23) 0rem 6rem 6rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .aiml img {
   position: relative;
-  top: 25rem;
+  top: 25px;
   width: 90%;
   height: 30%;
   object-fit: cover;
   filter: grayscale(0);
   transition: 0.2s ease-in;
-  box-shadow: rgba(0, 0, 0, 0.24) 0rem 3rem 8rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .aiml img:hover {
   filter: grayscale(0);
@@ -469,10 +469,10 @@ header .fa-times {
 .aiml p {
   position: relative;
 
-  padding: 20rem 20rem;
+  padding: 20px 20px;
   text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.2px;
+  line-height: 1.5px;
   font-family: "Josefin Sans", sans-serif;
 
   color: rgb(31, 31, 31);
@@ -480,23 +480,23 @@ header .fa-times {
 
 .aiml span a {
   position: relative;
-  top: -35rem;
+  top: -35px;
   color: rgb(0, 0, 0);
   text-align: center;
   font-family: "Staatliches", cursive;
 
-  font-size: 1.2rem;
-  padding: 5rem 15rem;
+  font-size: 1.2px;
+  padding: 5px 15px;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.19) 0rem 10rem 20rem, rgba(0, 0, 0, 0.23) 0rem 6rem 6rem;
-  border: 2rem solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border: 2px solid rgb(255, 255, 255);
   transition: 0.18s all;
 }
 .aiml span a:hover {
-  box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-    rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
+  box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+    rgba(187, 187, 187, 0.23) 0px 6px 6px;
 
-  border: 2rem solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 /*******ENDS********/
@@ -512,23 +512,23 @@ header .fa-times {
   display: flex;
   flex-direction:row;
   justify-content: center;
-  align-itrems: center;
+  align-itpxs: center;
   justify-content: space-between;
 }
 .footer .left-footer .share {
-  padding-top: 1rem;
+  padding-top: 1px;
 }
 
 .footer .left-footer .share a {
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4rem;
-  font-size: 2rem;
+  height: 4.5px;
+  width: 4.5px;
+  line-height: 4px;
+  font-size: 2px;
   border-radius: 50%;
-  font-size: 1.7rem;
-  border: 0.2rem solid rgb(255, 138, 70);
+  font-size: 1.7px;
+  border: 0.2px solid rgb(255, 138, 70);
   color: rgb(255, 138, 70);
-  margin-right: .5rem;
+  margin-right: .5px;
   text-align: center;
 }
 
@@ -537,12 +537,12 @@ header .fa-times {
   color: #111;
 }
 .footer .left-footer h4{
-  margin-bottom: 35rem;
-  font-size: 27rem;
+  margin-bottom: 35px;
+  font-size: 27px;
 }
 .left-footer {
-  margin-left: 102rem;
-  letter-spacing: 2rem;
+  margin-left: 102px;
+  letter-spacing: 2px;
   font-weight: 100;
   color: rgb(255, 138, 70);
   text-align: center;
@@ -554,18 +554,18 @@ header .fa-times {
   font-weight: 100;
   font-family: "Josefin Sans", sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 1rem;
-  margin: 10rem 10rem;
+  font-size: 1px;
+  margin: 10px 10px;
 }
 .footer .x .box h3{
-  font-size: 30rem;
+  font-size: 30px;
 }
 .footer .x .box .links {
   display: flex;
   flex-direction:row;
- font-size: 1.2rem;
+ font-size: 1.2px;
   color: #aaa;
-  padding: 1rem 0;
+  padding: 1px 0;
   display: block;
 }
 
@@ -574,45 +574,45 @@ header .fa-times {
 }
 
 .footer .x .box .links:hover i {
-  padding-right: 1rem;
+  padding-right: 1px;
 }
 
 .footer .x .box .links i {
-  padding-right: 1.5rem;
+  padding-right: 1.5px;
   color: rgb(255, 138, 70);
 }
 .right-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-itrems: center;
-  margin-right: 25rem;
-  margin-left: 25rem;
+  align-itpxs: center;
+  margin-right: 25px;
+  margin-left: 25px;
   color: rgb(255, 138, 70);
-  letter-spacing: 2rem;
+  letter-spacing: 2px;
   font-weight: 50;
   font-family: "Josefin Sans", sans-serif;
 }
 .footer .right-footer h3 {
-  font-size: 1.7rem;
+  font-size: 1.7px;
   color: white;
-  margin: 10rem 10rem 10rem 10rem;
+  margin: 10px 10px 10px 10px;
 
 }
 .footer .right-footer p{
-  font-size: 1.5rem;
-  margin-top: 10rem;
-  margin-bottom: 15rem;
+  font-size: 1.5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   color:  rgb(255, 138, 70);
 }
 .footer .right-footer .connect .btnn{
-  margin-top: 1rem;
+  margin-top: 1px;
   display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1rem;
+  padding: 1px 3px;
+  font-size: 1px;
   color: #f3f3f3;
-  border: 0.3rem solid #ffffff;
-  border-radius: 7rem;
+  border: 0.3px solid #ffffff;
+  border-radius: 7px;
   cursor: pointer;
   background: none;
 }
@@ -620,7 +620,7 @@ header .fa-times {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 10rem 10rem 50rem 10rem;
+  margin: 10px 10px 50px 10px;
 }
 .footer .right-footer .connect .btnn:hover {
   background: rgb(255, 138, 70);
@@ -628,26 +628,26 @@ header .fa-times {
 }
 
 
-.footer .right-footer .connect form .remail {
-  border-radius: 5rem;
-  border: 0.2rem solid rgb(255, 138, 70);
+.footer .right-footer .connect form .pxail {
+  border-radius: 5px;
+  border: 0.2px solid rgb(255, 138, 70);
   height: auto;
   width: auto;
   background: none;
-  font-size: 1.3rem;
+  font-size: 1.3px;
   text-transform: none;
   color: rgb(255, 255, 255);
-  margin-bottom: 1rem;
-  padding: 1rem 1.05rem;
+  margin-bottom: 1px;
+  padding: 1px 1.05px;
 }
  .leads .credit {
    width: 100%;
 
   background: rgb(20, 20, 20);;
   text-align: center;
-  font-size: 2rem;
-  padding: 2rem 1rem;
-  margin: 1rem 585rem -55rem -15rem;
+  font-size: 2px;
+  padding: 2px 1px;
+  margin: 1px 585px -55px -15px;
   color: rgb(165, 152, 152);
 }
 
@@ -660,40 +660,40 @@ header .fa-times {
   justify-content: center;
   justify-content: space-evenly;
 
-  font-size: 1.4rem;
+  font-size: 1.4px;
 }
 .foot-links a {
-  width: 20rem;
-  height: 10rem;
+  width: 20px;
+  height: 10px;
   color: rgb(255, 138, 70);
   transition: 0.2s ease-out;
-  margin-top: 10rem; */
+  margin-top: 10px; */
 /* }
 .foot-links a:hover {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.5px;
 } */
 
 /******************************************* MEDIA QUERY *******************************************/
-@media (max-width: 768rem) {
+@media (max-width: 768px) {
   html {
     font-size: 55%;
   }
 
   header {
-    height: 50rem;
+    height: 50px;
   }
   header .fa-bars {
     display: block;
-    margin-right: 10rem;
+    margin-right: 10px;
   }
   header .navbar {
     position: fixed;
-    top: -100rem;
+    top: -100px;
     left: 0;
     width: 100%;
     background: #333;
-    border-radius: 1rem;
+    border-radius: 1px;
     opacity: 0;
     transition: 0.2s linear;
     height: 100vh;
@@ -714,16 +714,16 @@ header .fa-times {
     display: block;
     background-color: #333;
     color: white;
-    font-size: 2rem;
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    font-size: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   header .navbar ul li a:hover {
     color: greenyellow;
     background-color: rgb(29, 29, 29);
   }
   header .nav-toggle {
-    top: 65rem;
+    top: 65px;
     opacity: 1;
     opacity: 0.8;
   }
@@ -735,24 +735,24 @@ header .fa-times {
 
     display: flex;
     justify-content: center;
-    align-itrems: center;
+    align-itpxs: center;
     flex-direction: column;
   }
 
   .intro h1 {
-    font-size: 4rem;
+    font-size: 4px;
     font-weight: 100;
     color: rgb(255, 255, 255);
   }
 
   .intro h4 {
-    font-size: 1.7rem;
+    font-size: 1.7px;
     font-weight: 100;
     color: rgb(255, 255, 255);
   }
 
   .intro span a {
-    padding: 10rem 20rem;
+    padding: 10px 20px;
   }
 
   /*******ENDS********/
@@ -763,47 +763,47 @@ header .fa-times {
     justify-content: center;
     height: 160vh;
     justify-content: space-evenly;
-    align-itrems: center;
+    align-itpxs: center;
   }
   .aboutus .left-text {
-    margin-top: -30rem;
-    margin-left: 0rem;
+    margin-top: -30px;
+    margin-left: 0px;
     display: flex;
-    align-itrems: center;
+    align-itpxs: center;
     flex-direction: column;
   }
   .aboutus .left-text .box-left {
-    margin-top: 10rem;
+    margin-top: 10px;
     width: 90vw;
     height: 50vh;
   }
   .aboutus .left-text .box-left p {
-    font-size: 1.5rem;
-    padding: 25rem;
+    font-size: 1.5px;
+    padding: 25px;
   }
 
   .aboutus .x {
-    margin-top: -140rem;
-    font-size: 10rem;
+    margin-top: -140px;
+    font-size: 10px;
     font-family: "Staatliches", cursive;
     color: white;
   }
   .aboutus .right-text {
-    margin-top: -180rem;
-    margin-right: 0rem;
+    margin-top: -180px;
+    margin-right: 0px;
     display: flex;
 
     flex-direction: column-reverse;
   }
 
   .aboutus .right-text .box-right {
-    margin-top: 20rem;
+    margin-top: 20px;
     width: 90vw;
     height: 50vh;
   }
   .aboutus .right-text .box-right p {
-    font-size: 1.5rem;
-    padding: 25rem;
+    font-size: 1.5px;
+    padding: 25px;
   }
 
   /***********************MEDIA QUERY CSS CODE FOR leads STARTS ***********************/
@@ -813,7 +813,7 @@ header .fa-times {
     grid-area: leads;
     display: flex;
     justify-content: center;
-    align-itrems: center;
+    align-itpxs: center;
 
     flex-direction: column;
     justify-content: space-around;
@@ -826,74 +826,74 @@ header .fa-times {
 
     width: 88%;
     height: 55vh;
-    margin: 5rem;
-    padding: 5rem;
+    margin: 5px;
+    padding: 5px;
     display: flex;
-    border-radius: 0 0 5rem 5rem;
+    border-radius: 0 0 5px 5px;
     background: rgb(255, 255, 255);
-    box-shadow: rgba(175, 175, 175, 0.19) 0rem 10rem 20rem,
-      rgba(187, 187, 187, 0.23) 0rem 6rem 6rem;
+    box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
+      rgba(187, 187, 187, 0.23) 0px 6px 6px;
   }
   .web h2 {
-    top: -22rem;
-    font-size: 2rem;
+    top: -22px;
+    font-size: 2px;
   }
   .web p {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 1.8px;
+    line-height: 2px;
   }
   .web span a {
-    font-size: 1.8rem;
+    font-size: 1.8px;
   }
   /*** 02 **** MEDIA QUERY APP LEAD********/
   .app h2 {
-    top: -22rem;
-    font-size: 2rem;
+    top: -22px;
+    font-size: 2px;
   }
   .app p {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 1.8px;
+    line-height: 2px;
   }
   .app span a {
-    font-size: 1.8rem;
+    font-size: 1.8px;
   }
   /*** 03****MEDIA QUERY  aiml LEAD********/
   .aiml h2 {
-    top: -22rem;
-    font-size: 2rem;
+    top: -22px;
+    font-size: 2px;
   }
   .aiml p {
-    font-size: 1.8rem;
-    line-height: 2rem;
+    font-size: 1.8px;
+    line-height: 2px;
   }
   .aiml span a {
-    font-size: 1.8rem;
+    font-size: 1.8px;
   }
 
   .footer {
     position: relative;
-    top: 200rem;
+    top: 200px;
     flex-direction: column;
     height: 40vh;
     justify-content: space-evenly;
   }
   .left-footer {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1px;
   }
   .right-footer {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.5px;
   }
   .right-footer a {
     color: rgb(255, 138, 70);
-    font-size: 2.4rem;
+    font-size: 2.4px;
     text-align: center;
     transition: 0.2s ease-out;
   }
   .right-footer a:hover {
     color: rgb(255, 255, 255);
-    font-size: 2.6rem;
+    font-size: 2.6px;
   }
   /***********END OF MEDIA QUERY************/
 }
