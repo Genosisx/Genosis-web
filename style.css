@@ -12,9 +12,9 @@
 /*********************** THIS IS CODE FOR LAYOUT ie GRID ***********************/
 body {
   display: grid;
-  grid-tpxplate-rows: auto;
-  grid-tpxplate-columns: minmax(300px, auto);
-  grid-tpxplate-areas:
+  grid-template-rows: auto;
+  grid-template-columns: minmax(300px, auto);
+  grid-template-areas:
     "navbar"
     "intro"
     "aboutus"
@@ -36,9 +36,9 @@ header {
   transform: translate(-50%);
   border-radius: 0;
   display: flex;
-  align-itpxs: center;
+  align-items: center;
   justify-content: space-between;
-  padding: 1px 2px;
+  padding: 1rem 2rem;
   z-index: 1000;
   transition: 0.2s;
 }
@@ -55,7 +55,7 @@ header .navbar {
 
 header .navbar ul {
   display: flex;
-  align-itpxs: center;
+  align-items: center;
   justify-content: space-evenly;
   list-style: none;
 
@@ -65,7 +65,7 @@ header .navbar ul li {
   margin: 1px 30px;
 }
 header .navbar ul li a {
-  font-size: 1px;
+  font-size: 1rem;
   font-weight: 100;
   background-color: none;
   color: greenyellow;
@@ -83,7 +83,7 @@ header .navbar ul li a:hover {
 header .logo {
   position: relative;
   margin-left: 15px;
-  font-size: 2px;
+  font-size: 2rem;
   color: var(--violet);
   font-family: "Staatliches", cursive;
   text-transform: uppercase;
@@ -92,7 +92,7 @@ header .logo {
 
 header .fa-bars {
   margin-right: 10px;
-  font-size: 3px;
+  font-size: 3rem;
   color: var(--pink);
   cursor: pointer;
   display: none;
@@ -116,21 +116,21 @@ header .fa-times {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .intro h1 {
   font-family: "Staatliches", cursive;
   color: rgb(255, 255, 255);
-  font-size: 4px;
+  font-size: 4rem;
   font-weight: 100;
 }
 
 .intro h4 {
   font-family: "Staatliches", cursive;
   color: rgb(255, 255, 255);
-  font-size: 1.2px;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 
@@ -138,7 +138,7 @@ header .fa-times {
   position: relative;
   top: 28px;
 
-  font-size: 1.8px;
+  font-size: 1.8rem;
   font-family: "Staatliches", cursive;
   padding: 5px 12px;
   margin-top: 5px;
@@ -160,7 +160,7 @@ header .fa-times {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   justify-content: space-between;
   position: relative;
 
@@ -177,7 +177,7 @@ header .fa-times {
   margin-bottom: 15%;
   display: flex;
 
-  align-itpxs: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -185,7 +185,7 @@ header .fa-times {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   margin-top: 40px;
   width: 40vw;
   height: 50vh;
@@ -197,7 +197,7 @@ header .fa-times {
 }
 .aboutus .left-text .box-left h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2px;
+  font-size: 2rem;
   padding: 20px;
   background-color: rgb(34, 34, 34);
   border-radius: 5px;
@@ -206,9 +206,9 @@ header .fa-times {
 .aboutus .left-text .box-left p {
   font-family: "Josefin Sans", sans-serif;
   padding: 80px;
-  font-size: 1.2px;
+  font-size: 1.2rem;
   text-align: center;
-  line-height: 1.5px;
+  line-height: 1.5rem;
 }
 /*********************** ^ CSS CODE LEFT ^ ***********************/
 
@@ -218,7 +218,7 @@ header .fa-times {
   margin-top: 15%;
   display: flex;
 
-  align-itpxs: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -226,7 +226,7 @@ header .fa-times {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
 
   width: 40vw;
   height: 50vh;
@@ -238,7 +238,7 @@ header .fa-times {
 }
 .aboutus .right-text .box-right h1 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2px;
+  font-size: 2rem;
   padding: 20px;
   background-color: rgb(34, 34, 34);
   border-radius: 5px;
@@ -247,9 +247,9 @@ header .fa-times {
 .aboutus .right-text .box-right p {
   font-family: "Josefin Sans", sans-serif;
   padding: 80px;
-  font-size: 1.2px;
+  font-size: 1.2rem;
   text-align: center;
-  line-height: 1.5px;
+  line-height: 1.5rem;
 }
 /*******ENDS********/
 
@@ -259,7 +259,7 @@ header .fa-times {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   grid-area: lead-head;
   width: 100%;
   height: 15vh;
@@ -270,7 +270,7 @@ header .fa-times {
   font-weight: 100;
   padding-left: 10px;
   color: rgb(46, 46, 46);
-  font-size: 2.5px;
+  font-size: 2.5rem;
   padding: 20px;
 
   border-radius: 6px;
@@ -286,7 +286,7 @@ header .fa-times {
 
   height: 100vh;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -301,7 +301,7 @@ header .fa-times {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   justify-content: space-between;
   background: rgb(255, 255, 255);
   box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
@@ -334,8 +334,8 @@ header .fa-times {
 
   padding: 20px 20px;
   text-align: center;
-  font-size: 1.2px;
-  line-height: 1.5px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
 
   color: rgb(31, 31, 31);
@@ -347,7 +347,7 @@ header .fa-times {
   text-align: center;
   font-family: "Staatliches", cursive;
 
-  font-size: 1.2px;
+  font-size: 1.2rem;
   padding: 5px 15px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -371,7 +371,7 @@ header .fa-times {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   justify-content: space-between;
   background: rgb(255, 255, 255);
   box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
@@ -402,8 +402,8 @@ header .fa-times {
 
   padding: 20px 20px;
   text-align: center;
-  font-size: 1.2px;
-  line-height: 1.5px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
 
   color: rgb(31, 31, 31);
@@ -416,7 +416,7 @@ header .fa-times {
   text-align: center;
   font-family: "Staatliches", cursive;
 
-  font-size: 1.2px;
+  font-size: 1.2rem;
   padding: 5px 15px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -440,7 +440,7 @@ header .fa-times {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   justify-content: space-between;
   background: rgb(255, 255, 255);
   box-shadow: rgba(175, 175, 175, 0.19) 0px 10px 20px,
@@ -471,8 +471,8 @@ header .fa-times {
 
   padding: 20px 20px;
   text-align: center;
-  font-size: 1.2px;
-  line-height: 1.5px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
 
   color: rgb(31, 31, 31);
@@ -485,7 +485,7 @@ header .fa-times {
   text-align: center;
   font-family: "Staatliches", cursive;
 
-  font-size: 1.2px;
+  font-size: 1.2rem;
   padding: 5px 15px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -512,23 +512,23 @@ header .fa-times {
   display: flex;
   flex-direction:row;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   justify-content: space-between;
 }
 .footer .left-footer .share {
-  padding-top: 1px;
+  padding-top: 1rem;
 }
 
 .footer .left-footer .share a {
-  height: 4.5px;
-  width: 4.5px;
-  line-height: 4px;
-  font-size: 2px;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4rem;
+  font-size: 2rem;
   border-radius: 50%;
-  font-size: 1.7px;
-  border: 0.2px solid rgb(255, 138, 70);
+  font-size: 1.7rem;
+  border: 0.2rem solid rgb(255, 138, 70);
   color: rgb(255, 138, 70);
-  margin-right: .5px;
+  margin-right: .5rem;
   text-align: center;
 }
 
@@ -554,7 +554,7 @@ header .fa-times {
   font-weight: 100;
   font-family: "Josefin Sans", sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 1px;
+  font-size: 1rem;
   margin: 10px 10px;
 }
 .footer .x .box h3{
@@ -563,9 +563,9 @@ header .fa-times {
 .footer .x .box .links {
   display: flex;
   flex-direction:row;
- font-size: 1.2px;
+ font-size: 1.2rem;
   color: #aaa;
-  padding: 1px 0;
+  padding: 1rem 0;
   display: block;
 }
 
@@ -574,18 +574,18 @@ header .fa-times {
 }
 
 .footer .x .box .links:hover i {
-  padding-right: 1px;
+  padding-right: 1rem;
 }
 
 .footer .x .box .links i {
-  padding-right: 1.5px;
+  padding-right: 1.5rem;
   color: rgb(255, 138, 70);
 }
 .right-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-itpxs: center;
+  align-items: center;
   margin-right: 25px;
   margin-left: 25px;
   color: rgb(255, 138, 70);
@@ -594,25 +594,25 @@ header .fa-times {
   font-family: "Josefin Sans", sans-serif;
 }
 .footer .right-footer h3 {
-  font-size: 1.7px;
+  font-size: 1.7rem;
   color: white;
   margin: 10px 10px 10px 10px;
 
 }
 .footer .right-footer p{
-  font-size: 1.5px;
+  font-size: 1.5rem;
   margin-top: 10px;
   margin-bottom: 15px;
   color:  rgb(255, 138, 70);
 }
 .footer .right-footer .connect .btnn{
-  margin-top: 1px;
+  margin-top: 1rem;
   display: inline-block;
-  padding: 1px 3px;
-  font-size: 1px;
+  padding: 1rem 3rem;
+  font-size: 1rem;
   color: #f3f3f3;
-  border: 0.3px solid #ffffff;
-  border-radius: 7px;
+  border: 0.3rem solid #ffffff;
+  border-radius: 7rem;
   cursor: pointer;
   background: none;
 }
@@ -628,25 +628,25 @@ header .fa-times {
 }
 
 
-.footer .right-footer .connect form .pxail {
-  border-radius: 5px;
-  border: 0.2px solid rgb(255, 138, 70);
+.footer .right-footer .connect form .email {
+  border-radius: 5rem;
+  border: 0.2rem solid rgb(255, 138, 70);
   height: auto;
   width: auto;
   background: none;
-  font-size: 1.3px;
+  font-size: 1.3rem;
   text-transform: none;
   color: rgb(255, 255, 255);
-  margin-bottom: 1px;
-  padding: 1px 1.05px;
+  margin-bottom: 1rem;
+  padding: 1rem 1.05rem;
 }
  .leads .credit {
    width: 100%;
 
   background: rgb(20, 20, 20);;
   text-align: center;
-  font-size: 2px;
-  padding: 2px 1px;
+  font-size: 2rem;
+  padding: 2rem 1rem;
   margin: 1px 585px -55px -15px;
   color: rgb(165, 152, 152);
 }
@@ -660,7 +660,7 @@ header .fa-times {
   justify-content: center;
   justify-content: space-evenly;
 
-  font-size: 1.4px;
+  font-size: 1.4rem;
 }
 .foot-links a {
   width: 20px;
@@ -671,7 +671,7 @@ header .fa-times {
 /* }
 .foot-links a:hover {
   color: #fff;
-  font-size: 1.5px;
+  font-size: 1.5rem;
 } */
 
 /******************************************* MEDIA QUERY *******************************************/
@@ -689,11 +689,11 @@ header .fa-times {
   }
   header .navbar {
     position: fixed;
-    top: -100px;
+    top: -100rem;
     left: 0;
     width: 100%;
     background: #333;
-    border-radius: 1px;
+    border-radius: 1rem;
     opacity: 0;
     transition: 0.2s linear;
     height: 100vh;
@@ -714,7 +714,7 @@ header .fa-times {
     display: block;
     background-color: #333;
     color: white;
-    font-size: 2px;
+    font-size: 2rem;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -735,18 +735,18 @@ header .fa-times {
 
     display: flex;
     justify-content: center;
-    align-itpxs: center;
+    align-items: center;
     flex-direction: column;
   }
 
   .intro h1 {
-    font-size: 4px;
+    font-size: 4rem;
     font-weight: 100;
     color: rgb(255, 255, 255);
   }
 
   .intro h4 {
-    font-size: 1.7px;
+    font-size: 1.7rem;
     font-weight: 100;
     color: rgb(255, 255, 255);
   }
@@ -763,13 +763,13 @@ header .fa-times {
     justify-content: center;
     height: 160vh;
     justify-content: space-evenly;
-    align-itpxs: center;
+    align-items: center;
   }
   .aboutus .left-text {
     margin-top: -30px;
     margin-left: 0px;
     display: flex;
-    align-itpxs: center;
+    align-items: center;
     flex-direction: column;
   }
   .aboutus .left-text .box-left {
@@ -778,13 +778,13 @@ header .fa-times {
     height: 50vh;
   }
   .aboutus .left-text .box-left p {
-    font-size: 1.5px;
+    font-size: 1.5rem;
     padding: 25px;
   }
 
   .aboutus .x {
     margin-top: -140px;
-    font-size: 10px;
+    font-size: 10rem;
     font-family: "Staatliches", cursive;
     color: white;
   }
@@ -802,7 +802,7 @@ header .fa-times {
     height: 50vh;
   }
   .aboutus .right-text .box-right p {
-    font-size: 1.5px;
+    font-size: 1.5rem;
     padding: 25px;
   }
 
@@ -813,7 +813,7 @@ header .fa-times {
     grid-area: leads;
     display: flex;
     justify-content: center;
-    align-itpxs: center;
+    align-items: center;
 
     flex-direction: column;
     justify-content: space-around;
@@ -836,38 +836,38 @@ header .fa-times {
   }
   .web h2 {
     top: -22px;
-    font-size: 2px;
+    font-size: 2rem;
   }
   .web p {
-    font-size: 1.8px;
-    line-height: 2px;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
   .web span a {
-    font-size: 1.8px;
+    font-size: 1.8rem;
   }
   /*** 02 **** MEDIA QUERY APP LEAD********/
   .app h2 {
     top: -22px;
-    font-size: 2px;
+    font-size: 2rem;
   }
   .app p {
-    font-size: 1.8px;
-    line-height: 2px;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
   .app span a {
-    font-size: 1.8px;
+    font-size: 1.8rem;
   }
   /*** 03****MEDIA QUERY  aiml LEAD********/
   .aiml h2 {
     top: -22px;
-    font-size: 2px;
+    font-size: 2rem;
   }
   .aiml p {
-    font-size: 1.8px;
-    line-height: 2px;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
   .aiml span a {
-    font-size: 1.8px;
+    font-size: 1.8rem;
   }
 
   .footer {
@@ -879,21 +879,21 @@ header .fa-times {
   }
   .left-footer {
     margin: 0;
-    font-size: 1px;
+    font-size: 1rem;
   }
   .right-footer {
     margin: 0;
-    font-size: 1.5px;
+    font-size: 1.5rem;
   }
   .right-footer a {
     color: rgb(255, 138, 70);
-    font-size: 2.4px;
+    font-size: 2.4rem;
     text-align: center;
     transition: 0.2s ease-out;
   }
   .right-footer a:hover {
     color: rgb(255, 255, 255);
-    font-size: 2.6px;
+    font-size: 2.6rem;
   }
   /***********END OF MEDIA QUERY************/
 }
